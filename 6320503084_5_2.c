@@ -28,5 +28,20 @@ int main()
         }
         printf("\n");
     }
+    for(i=u;i>0;i--)
+    {
+        for(j=a;j>0;j--)
+        {
+            if(j==z+i-1||j==z-i+1)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf("_");
+            }
+        }
+        printf("\n");
+    }
     return 0;
 }
