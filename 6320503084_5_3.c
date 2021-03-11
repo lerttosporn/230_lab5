@@ -1,22 +1,30 @@
 #include<stdio.h>
 int main ()
 {
-    int n,i=0,x=2,y=0;
+    int n,i,j=0,x,y=0;
     scanf("%d",&n);
-    int ar[n];
-    ar[0]=1;
-    for(i=1; i<n; i++)
+    int ar[3]= {2,3,5},z;
+    for(i=1;j<n; i++)
     {
-        if(x%2==0||x%3==0|x%5==0)
+        x=i;
+        while(y!=3)
         {
-            ar[i]=x;
+            if(x%ar[y]==0)
+            {
+                x=x/ar[y];
+            }
+            else
+            {
+                y++;
+            }
         }
-        else
+        y=0;
+        if(x==1)
         {
-            i--;
+            z=i;
+            j++;
         }
-        x++;
     }
-    printf("%d",ar[n]);
+    printf("%d",z);
     return 0;
 }
